@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using TechiesNS.Views;
+using Techies.Common.XF;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace TechiesNS
@@ -12,7 +13,8 @@ namespace TechiesNS
         public App()
         {
             InitializeComponent();
-
+            
+            PreserveLinker.Preserve();
 
             MainPage = new MainPage();
         }
